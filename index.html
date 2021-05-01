@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MX Consult</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/28ccb26f16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="container-all">
+
+    <div id="header">
+      <header>
+        <div id="left-nav" onclick="openNav()">
+          <i class="fas fa-bars" id="navicon"></i>
+        </div>
+        <div id="logo">
+          <img src="assets/images/Design sem nome.png" alt="logo" id="logoheader">
+        </div>
+        <div id="wpplink">
+          <i class="fab fa-whatsapp" id="wpp"></i>
+        </div>
+      </header>
+    </div>
+
+    <div id="openclosenav">
+      <div id="navmenu">
+        <nav id="nav">
+          <div class="navbarsep"></div>
+          <span><a href="">Home</a></span>
+          <div class="navbarsep"></div>
+          <span><a href="">Quem Somos</a></span>
+          <div class="navbarsep"></div>
+          <span><a href="">Contato</a></span>
+          <div class="navbarsep"></div>
+          <span><a href="">Orçamentos</a></span>
+          <div class="navbarsep"></div>
+        </nav>
+        <div id="closebtncont" onclick="closeNav()"><i class="fas fa-times" id="closebtn"></i></div>
+      </div>
+    </div>
+
+    <div id="main">
+
+      <div id="part1">
+
+        <img src="assets/images/image 1.jpg" alt="" id="fotopredio">
+
+        <div id="outdoor">
+
+          <p id="mx">MX Consult</p>
+          <div id="linhalogo"></div>
+          <p id="consult">Consultoria Empresarial</p>
+
+        </div>
+      </div>
+
+      <div id="part2">
+
+        <h1>Nossos Serviços:</h1>
+
+        <div id="b1-serv">
+          <img src="assets/images/p2-img1.png" alt="" class="fotop2">
+
+          <h2>Consultoria Especializada em Resultados:</h2>
+
+          <p>Acompanhamos de perto o processo de expansão da sua empresa, ou rede de empresas, sempre sugerindo as ações mais inteligentes para cada situação.</p>
+
+        </div>
+
+        <div id="b2-serv">
+
+          <img src="assets/images/p2-img2.png" alt="" class="fotop2">
+
+          <h2>Otimização de Lucro:</h2>
+
+          <p>Correção de possiveis excessos e despesas não necessárias, criando assim uma maior retenção de capital.</p>
+
+        </div>
+
+        <div id="b3-serv">
+        
+          <img src="assets/images/p2-img3.png" alt="" class="fotop2">
+
+          <h2>Gestão de Crises:</h2>
+
+          <p>Consultoria Especializada em gestão de crises, enumerando e agindo diretamente nos pontos necessários para a recuperação financeira da sua empresa.</p>
+
+        </div>
+
+      </div>
+
+      <div id="part3">
+
+        <h1>Vantagens:</h1>
+
+        <div id="container-ul">
+          <ul>
+            <li><p>Maior abrangência do mercado: Estamos presentes em 10 estados brasileiros e nas maiores capitais do país.</p></li>
+            <li><p>Resultados comprovados por nossos clientes recorrentes: 90% dos nossos clientes retornam à trabalhar conosco e recomendam nossos serviços.</p></li>
+            <li><p>Profissionais mais bem capacitados do mercado: Nossos colaboradores são especializados nas áreas mais essenciais do ramo.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="part4">
+
+        <h1>Empresas que trabalhamos juntos:</h1>
+
+        <div id="cont-empresas">
+
+          <img src="assets/images/logop4.png" alt="">
+
+          <img src="assets/images/logo3p4.png" alt="">
+
+          <img src="assets/images/logo2p4.png" alt="">
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div id="form">
+
+      <div id="form-content">
+        <h1>Contrate-nos:</h1>
+        <input type="text" name="nome" id="inptname" placeholder="Nome Completo">
+        <input type="number" name="idade" id="inptage" placeholder="Idade">
+        <select name="estado" id="sel-estado">
+          <option value="RJ">RJ</option>
+          <option value="SP">SP</option>
+          <option value="MG">MG</option>
+          <option value="DF">DF</option>
+        </select>
+        <input type="text" name="cidade" id="inpt-city" placeholder="Cidade">
+        <input type="number" name="tel" id="inpt-tel" placeholder="Telefone">
+        <input type="text" name="email" id="inpt-email" placeholder="Email">
+        <select name="tipo" id="inpt-type">
+          <option value="padrao">Padrão</option>
+          <option value="platina">Platina</option>
+          <option value="exclusive">Exclusive</option>
+        </select>
+        <textarea name="msg" id="inpt-msg" cols="30" rows="5"></textarea>
+
+        <button id="btn-enviarform">Enviar</button>
+      </div>
+
+
+    </div>
+
+    <footer>
+      <p id="footer-title">MX Consult | Consultoria</p>
+
+      <i class="fab fa-linkedin"></i>
+
+      <i class="fab fa-instagram-square"></i>
+
+      <i class="fab fa-whatsapp-square"></i>
+
+      <i class="fab fa-facebook-square"></i>
+
+      <p id="footer-contato">(99) 9999-9999 | contato@mxconsult.com.br</p>
+      
+    </footer>
+
+  </div>
+<script src="btnscript.js"></script> 
+</body>
+</html>
