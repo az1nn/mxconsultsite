@@ -33,6 +33,10 @@ body {
   z-index:3;
 }
 
+#headerWeb {
+  display: none;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -64,6 +68,8 @@ header {
   z-index: 2;
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 20px;
   font-size: 24px;
   position: relative;
@@ -96,10 +102,7 @@ header {
 }
 
 #closebtn {
-  position: absolute;
-  font-size: 46px;
-  top: 300px;
-  left: 170px;
+  font-size: 46px; 
 }
 
 #navicon {
@@ -314,4 +317,152 @@ footer i {
 
 #footer-contato {
   font-size: 14px;
+}
+
+#footer2 {
+  display: none;
+}
+@media (max-width: 320px) {
+  footer i {
+    padding: 10px;
+  }
+}
+ /* -- WEB --  */
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 70px;
+  }
+
+  #part2 p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  #part2 h2 {
+    font-size: 26px;
+  }
+  #cont-vantagens p {
+    font-size: 22px;
+  }
+
+  #cont-empresas img {
+    padding: 20px 40px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #header {
+    display: none;
+  }
+  #headerWeb {
+    background-color: var(--black);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index:3;
+  }
+  .linkmenu {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font1);
+    font-size: 20px;
+    padding: 15px 15px;
+  }
+  .linkmenu:hover {
+    background-color: #2e2e2e;
+  }
+  #logo {
+    margin-left: 40px;
+  }
+  #left-nav {
+    width: 120px;
+  }
+  #navicon{
+    font-size: 36px;
+  }
+  #wpp {
+    font-size: 36px;
+    margin-right: 10px;
+  }
+  #part1 {
+    height: 500px;
+  }
+  #fotopredio {
+    height: 100%;
+    max-height: none;
+  }
+  #outdoor {
+    height: 200px;
+    top: 140px;
+  }
+  #mx {
+    font-size: 64px;
+  }
+  #linhalogo {
+    width: 300px;
+  }
+  #consult {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  #part2, #part3cont {
+    padding: 30px 0px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #part2 h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #part3cont h1 {
+    margin-bottom: 40px;
+  }
+  #cont-vantagens li {
+    margin-bottom: 40px;
+  }
+  #cont-empresas {
+    height: 300px;
+  }
+  #part4 h1 {
+    margin-bottom: 60px;
+  }
+  #cont-empresas img {
+    width: 150px;
+  }
+  #form h1 {
+    font-size: 46px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #form-content {
+    width: 50%;
+  }
+  #form-content input {
+    height: 40px;
+  }
+  #form-content select {
+    height: 40px;
+  }
+  footer {
+    display: none;
+  }
+  #footer2 {
+    display: block;
+  }
+  #footer-title2 {
+    font-size: 28px;
+  }
+  #footer-contato2 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  #footer-icons2 {
+    margin-bottom: -20px;
+  }
 }
