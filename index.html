@@ -5,11 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MX Consult</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/28ccb26f16.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,14 +21,14 @@
 
     <div id="header">
       <header>
-        <div id="left-nav" onclick="openNav()">
+        <div id="left-nav" onclick="menuonoff()">
           <i class="fas fa-bars" id="navicon"></i>
         </div>
         <div id="logo">
-          <img src="assets/images/Design sem nome.png" alt="logo" id="logoheader">
+          <img src="assets/images/logomxhd.png" alt="logo" id="logoheader">
         </div>
         <div id="wpplink">
-          <i class="fab fa-whatsapp" id="wpp"></i>
+          <a href="#"><i class="fab fa-whatsapp" id="wpp"></i></a>
         </div>
       </header>
     </div>
@@ -33,19 +36,19 @@
     <div id="headerWeb">
       <header>
         <div id="logo">
-          <img src="assets/images/Design sem nome.png" alt="logo" id="logoheader">
+          <img src="assets/images/logomxhd.png" alt="logo" id="logoheader">
         </div>
-        <a href="" class="linkmenu">Home</a>
-        <a href="" class="linkmenu">Quem Somos</a>
-        <a href="" class="linkmenu">Contato</a>
-        <a href="" class="linkmenu">Orçamentos</a>
+        <a href="#" class="linkmenu">Home</a>
+        <a href="#" class="linkmenu">Quem Somos</a>
+        <a href="#" class="linkmenu">Contato</a>
+        <a href="#" class="linkmenu">Orçamentos</a>
         <div id="wpplink">
-          <i class="fab fa-whatsapp" id="wpp"></i>
+          <a href="#"><i class="fab fa-whatsapp" id="wpp"></i></a>
         </div>
       </header>
     </div>
 
-    <div id="openclosenav">
+    <div id="openclosenav" class="hide">
       <div id="navmenu">
         <nav id="nav">
           <div class="navbarsep"></div>
@@ -58,15 +61,12 @@
           <span><a href="">Orçamentos</a></span>
           <div class="navbarsep"></div>
         </nav>
-        <div id="closebtncont" onclick="closeNav()"><i class="fas fa-times" id="closebtn"></i></div>
       </div>
     </div>
 
     <div id="main">
 
       <div id="part1">
-
-        <img src="assets/images/image 1 (1).jpg" alt="" id="fotopredio">
 
         <div id="outdoor">
 
@@ -75,39 +75,40 @@
           <p id="consult">Consultoria Empresarial</p>
 
         </div>
+
+        <div id="callto">
+          <div id="cont-title-callto">
+            <h2>Venha fazer parte da família MX Consult!</h2>
+          </div>
+          <div id="bar-callto"></div>
+          <div id="cont-text-callto">
+            <p id="text-callto">Comunicação, trabalho duro e expertise são as chaves para um negócio de sucesso.</p>
+          </div>
+          <div id="cont-btn-callto"><a href="#" id="btn-callto">Saiba mais</a></div>
+        </div>
       </div>
 
       <div id="part2">
 
         <h1>Nossos Serviços:</h1>
 
-        <div id="b1-serv">
-          <img src="assets/images/p2-img1.png" alt="" class="fotop2">
-
-          <h2>Consultoria Especializada em Resultados:</h2>
-
-          <p>Acompanhamos de perto o processo de expansão da sua empresa, ou rede de empresas, sempre sugerindo as ações mais inteligentes para cada situação.</p>
-
-        </div>
-
-        <div id="b2-serv">
-
-          <img src="assets/images/p2-img2.png" alt="" class="fotop2">
-
-          <h2>Otimização de Lucro:</h2>
-
-          <p>Correção de possiveis excessos e despesas não necessárias, criando assim uma maior retenção de capital.</p>
-
-        </div>
-
-        <div id="b3-serv">
-        
-          <img src="assets/images/p2-img3.png" alt="" class="fotop2">
-
-          <h2>Gestão de Crises:</h2>
-
-          <p>Consultoria Especializada em gestão de crises, enumerando e agindo diretamente nos pontos necessários para a recuperação financeira da sua empresa.</p>
-
+        <div id="part2-flex">
+          <div id="b1-serv">
+            <img src="assets/images/p2-img1.png" alt="" class="fotop2">
+            <h2>Consultoria Especializada em Resultados:</h2>
+            <p>Acompanhamos de perto o processo de expansão da sua empresa, ou rede de empresas, sempre sugerindo as ações mais inteligentes para cada situação.</p>
+          </div>
+          <div id="b2-serv">
+            <img src="assets/images/p2-img2.png" alt="" class="fotop2">
+            <h2>Otimização de Lucro:</h2>
+            <p>Correção de possiveis excessos e despesas não necessárias, criando assim uma maior retenção de capital.</p>
+          </div>
+          <div id="b3-serv">
+          
+            <img src="assets/images/p2-img3.png" alt="" class="fotop2">
+            <h2>Gestão de Crises:</h2>
+            <p>Consultoria Especializada em gestão de crises, enumerando e agindo diretamente nos pontos necessários para a recuperação financeira da sua empresa.</p>
+          </div>
         </div>
 
       </div>
@@ -115,13 +116,19 @@
       <div id="part3">
 
         <div id="part3cont">
-          <h1>Vantagens:</h1>
-          <div id="container-ul">
-            <ul id="cont-vantagens">
-              <li><p>Maior abrangência do mercado: Estamos presentes em 10 estados brasileiros e nas maiores capitais do país.</p></li>
-              <li><p>Resultados comprovados por nossos clientes recorrentes: 90% dos nossos clientes retornam à trabalhar conosco e recomendam nossos serviços.</p></li>
-              <li><p>Profissionais mais bem capacitados do mercado: Nossos colaboradores são especializados nas áreas mais essenciais do ramo.</p></li>
-            </ul>
+          <div id="cont-h1">
+            <h1>Vantagens em ter a MX Consult ao seu lado:</h1>
+          </div> 
+          <div id="cont-vantagens">
+              <div class="block-part3 left-block">
+                <p><span class="span-bold">Maior abrangência do mercado:</span> Estamos presentes em 10 estados brasileiros e nas maiores capitais do país.</p>
+              </div>
+              <div class="block-part3 right-block">
+                <p><span class="span-bold">Resultados comprovados por nossos clientes recorrentes:</span> 90% dos nossos clientes retornam à trabalhar conosco e recomendam nossos serviços.</p>
+              </div>
+              <div class="block-part3 left-block">
+                <p><span class="span-bold">Profissionais mais bem capacitados do mercado:</span> Nossos colaboradores são especializados nas áreas mais essenciais do ramo.</p>
+              </div>
           </div>
         </div>
       </div>
@@ -130,15 +137,31 @@
 
         <h1>Empresas que trabalhamos juntos:</h1>
 
-        <div id="cont-empresas">
-
-          <img src="assets/images/logop4.png" alt="">
-
-          <img src="assets/images/logo3p4.png" alt="">
-
-          <img src="assets/images/logo2p4.png" alt="">
-
+        <div id="cont-carrousel">
+          <input type="radio" name="position"/>
+          <input type="radio" name="position"/>
+          <input type="radio" name="position" checked/>
+          <input type="radio" name="position"/>
+          <input type="radio" name="position"/>
+          <main id="carousel">
+            <div class="item">
+              <img src="assets/images/logo-coca-cola.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/images/logo-globo.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/images/logo-magalu.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/images/logo-petrobras.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/images/logo-spotify.jpg" alt="">
+            </div>
+            <main>
         </div>
+        
 
       </div>
       
@@ -148,25 +171,26 @@
 
       <div id="form-content">
         <h1>Contrate-nos:</h1>
-        <input type="text" name="nome" id="inptname" placeholder="Nome Completo">
-        <input type="number" name="idade" id="inptage" placeholder="Idade">
-        <select name="estado" id="sel-estado">
-          <option value="RJ">RJ</option>
-          <option value="SP">SP</option>
-          <option value="MG">MG</option>
-          <option value="DF">DF</option>
-        </select>
-        <input type="text" name="cidade" id="inpt-city" placeholder="Cidade">
-        <input type="number" name="tel" id="inpt-tel" placeholder="Telefone">
-        <input type="text" name="email" id="inpt-email" placeholder="Email">
-        <select name="tipo" id="inpt-type">
-          <option value="padrao">Padrão</option>
-          <option value="platina">Platina</option>
-          <option value="exclusive">Exclusive</option>
-        </select>
-        <textarea name="msg" id="inpt-msg" cols="30" rows="5"></textarea>
-
-        <button id="btn-enviarform">Enviar</button>
+        <form action="" method="POST" id="form-main">
+          <input type="text" name="nome" id="inptname" placeholder="Nome Completo" required>
+          <input type="number" name="idade" id="inptage" placeholder="Idade" required>
+          <select name="estado" id="sel-estado">
+            <option value="RJ">RJ</option>
+            <option value="SP">SP</option>
+            <option value="MG">MG</option>
+            <option value="DF">DF</option>
+          </select>
+          <input type="text" name="cidade" id="inpt-city" placeholder="Cidade" required>
+          <input type="number" name="tel" id="inpt-tel" placeholder="Telefone" required>
+          <input type="text" name="email" id="inpt-email" placeholder="Email" required>
+          <select name="tipo" id="inpt-type">
+            <option value="padrao">Padrão (1 reunião privada por semana)</option>
+            <option value="platina">Platina (3 reuniões privadas por semana)</option>
+            <option value="exclusive">Exclusive (5 reuniões privadas por semana)</option>
+          </select>
+          <textarea name="msg" id="inpt-msg" cols="30" rows="5" placeholder="Fale um pouco sobre você..."></textarea>
+          <button type="submit" id="btn-enviarform">Enviar</button>
+        </form>
       </div>
 
 
@@ -176,26 +200,26 @@
       <p id="footer-title">MX Consult | Consultoria</p>
 
       <div id="footer-icons">
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-whatsapp-square"></i>
-        <i class="fab fa-facebook-square"></i>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
       </div>
 
-      <p id="footer-contato">(99) 9999-9999 | contato@mxconsult.com.br</p>
+      <p id="footer-contato"><a href="telto:+559999999999">(99) 9999-9999</a> | <a href="mailto:contato@mxconsult.com.br">contato@mxconsult.com.br</a></p>
       
     </footer>
 
     <footer id="footer2">
       <p id="footer-title2">MX Consult | Consultoria</p>
 
-      <p id="footer-contato2">(99) 9999-9999 | contato@mxconsult.com.br</p>
+      <p id="footer-contato2"><a href="telto:+559999999999">(99) 9999-9999</a> | <a href="mailto:contato@mxconsult.com.br">contato@mxconsult.com.br</a></p>
 
       <div id="footer-icons2">
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-whatsapp-square"></i>
-        <i class="fab fa-facebook-square"></i>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
       </div>
       
     </footer>
