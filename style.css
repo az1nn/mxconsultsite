@@ -758,6 +758,9 @@ footer i {
     background-color: var(--green);
     color: var(--white);
   }
+  .txt-blockp3{
+    margin: 0 auto;
+  }
   .left-block {
     margin: 0 auto;
     margin-bottom: 60px;
