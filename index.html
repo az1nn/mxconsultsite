@@ -94,18 +94,18 @@
 
         <div id="part2-flex">
           <div id="b1-serv">
-            <img src="assets/images/p2-img1.png" alt="" class="fotop2">
+            <img src="assets/images/icon3.jpg" alt="" class="fotop2">
             <h2>Consultoria Especializada em Resultados:</h2>
             <p>Acompanhamos de perto o processo de expansão da sua empresa, ou rede de empresas, sempre sugerindo as ações mais inteligentes para cada situação.</p>
           </div>
           <div id="b2-serv">
-            <img src="assets/images/p2-img2.png" alt="" class="fotop2">
+            <img src="assets/images/icon1.jpg" alt="" class="fotop2">
             <h2>Otimização de Lucro:</h2>
             <p>Correção de possiveis excessos e despesas não necessárias, criando assim uma maior retenção de capital.</p>
           </div>
           <div id="b3-serv">
           
-            <img src="assets/images/p2-img3.png" alt="" class="fotop2">
+            <img src="assets/images/icon2.jpg" alt="" class="fotop2">
             <h2>Gestão de Crises:</h2>
             <p>Consultoria Especializada em gestão de crises, enumerando e agindo diretamente nos pontos necessários para a recuperação financeira da sua empresa.</p>
           </div>
@@ -169,28 +169,40 @@
 
     <div id="form">
 
+      
       <div id="form-content">
-        <h1>Contrate-nos:</h1>
-        <form action="" method="POST" id="form-main">
-          <input type="text" name="nome" id="inptname" placeholder="Nome Completo" required>
-          <input type="number" name="idade" id="inptage" placeholder="Idade" required>
-          <select name="estado" id="sel-estado">
-            <option value="RJ">RJ</option>
-            <option value="SP">SP</option>
-            <option value="MG">MG</option>
-            <option value="DF">DF</option>
-          </select>
-          <input type="text" name="cidade" id="inpt-city" placeholder="Cidade" required>
-          <input type="number" name="tel" id="inpt-tel" placeholder="Telefone" required>
-          <input type="text" name="email" id="inpt-email" placeholder="Email" required>
-          <select name="tipo" id="inpt-type">
-            <option value="padrao">Padrão (1 reunião privada por semana)</option>
-            <option value="platina">Platina (3 reuniões privadas por semana)</option>
-            <option value="exclusive">Exclusive (5 reuniões privadas por semana)</option>
-          </select>
-          <textarea name="msg" id="inpt-msg" cols="30" rows="5" placeholder="Fale um pouco sobre você..."></textarea>
-          <button type="submit" id="btn-enviarform">Enviar</button>
-        </form>
+        <div id="in-form-content">
+          <div id="title-form">
+            <div id="grid-content">
+              <h1>Contrate-nos:</h1>
+            </div>
+            <div id="grid-content-R">
+              <p id="p-form-guide">Preencha o formulário abaixo para entrarmos em contato com você e ajudar-lhe a escolher o melhor pacote para sua situção.</p>
+              <img src="assets/images/form-icon-white.png" alt="" id="form-icon">
+            </div>
+          </div>
+          <div id="bar-form"></div>
+          <form action="" method="POST" id="form-main">
+            <input type="text" name="nome" id="inptname" class="setenta" placeholder="Nome Completo" required>
+            <input type="number" name="idade" id="inptage" class="trinta" placeholder="Idade" required>
+            <select name="estado" id="sel-estado" class="trinta">
+              <option value="RJ">RJ</option>
+              <option value="SP">SP</option>
+              <option value="MG">MG</option>
+              <option value="DF">DF</option>
+            </select>
+            <input type="text" name="cidade" id="inpt-city" class="setenta" placeholder="Cidade" required>
+            <input type="number" name="tel" id="inpt-tel" class="full" placeholder="Telefone - (ex.(99) 9999-9999)" required>
+            <input type="text" name="email" id="inpt-email" class="full" placeholder="Email - (ex. nome@email.com)" required>
+            <select name="tipo" id="inpt-type" class="full">
+              <option value="padrao">Padrão (1 reunião privada por semana)</option>
+              <option value="platina">Platina (3 reuniões privadas por semana)</option>
+              <option value="exclusive">Exclusive (5 reuniões privadas por semana)</option>
+            </select>
+            <textarea name="msg" id="inpt-msg" class="full" cols="30" rows="5" placeholder="Fale um pouco sobre você..."></textarea>
+            <button type="submit" id="btn-enviarform" class="full">Enviar</button>
+          </form>
+        </div>
       </div>
 
 

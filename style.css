@@ -219,6 +219,7 @@ header {
 
 #text-callto {
   text-align: center;
+  font-family: var(--font3);
 }
 
 #cont-btn-callto {
@@ -274,6 +275,7 @@ header {
 
 #b1-serv, #b2-serv, #b3-serv {
   margin: 0px 20px;
+  font-family: var(--font3);
 }
 
 #b3-serv {
@@ -467,7 +469,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 #form {
   background-image: url(assets/images/teste1212.jpg);
   background-repeat: no-repeat;
-  background-repeat: round;
+  background-position: center(--middle);
   text-align: center;
   font-family: var(--font1);
   font-size: 18px;
@@ -477,48 +479,88 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 
 #form-content {
+  margin: 20px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 10px;
+}
+
+#in-form-content {
+  width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  padding: 5px;
 }
 
-#form h1 {
+#title-form {
+  width: 100%;
   color: var(--white);
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 3px black;
 }
 
-#form-main {
+#p-form-guide {
+  text-align: left;
+}
+#grid-content {
+  margin: 30px 0px;
+}
+#grid-content-R {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-#form input {
-  height: 24px;
+#form-icon{
+  width: 60px;
+  height: 60px;
+  padding-left: 10px;
+}
+#p-form-guide{
+  font-family: var(--font3);
+}
+#bar-form {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--white);
+  margin-bottom: 30px;
+}
+
+#form-main input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 3px;
   border: none;
-  margin-bottom: 15px;
-  padding: 5px;
-  border-radius: 3px;
   outline: none;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: var(--font3);
 }
 
-#form select {
-  margin-bottom: 15px;
+#form-main select {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
   border-radius: 3px;
+  border: none;
   outline: none;
-  height: 30px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 3px;
+  box-sizing: border-box;
+  font-family: var(--font3);
 }
 
-#form textarea {
+#form-main textarea {
+  width: 100%;
+  margin-bottom: 10px;
   border-radius: 3px;
+  border: none;
   outline: none;
-  font-family: Arial;
-  padding: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: var(--font3);
 }
 
 #btn-enviarform {
@@ -526,9 +568,11 @@ input:nth-of-type(5):checked ~ main#carousel {
   font: var(--font2);
   color: var(--white);
   background-color: #f36828;
+  width: 100%;
   padding: 10px;
   margin-top: 20px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 #btn-enviarform:hover {
@@ -572,9 +616,6 @@ footer i {
   #part1 {
     height: 540px;
   }
-  #form-content h1 {
-    font-size: 32px;
-  }
   footer i {
     padding: 10px;
   }
@@ -585,7 +626,6 @@ footer i {
   #header {
     height: 70px;
   }
-
   #part2 p {
     font-size: 20px;
   }
@@ -595,13 +635,8 @@ footer i {
   #part2 h2 {
     font-size: 26px;
   }
-  #cont-vantagens p {
-    font-size: 22px;
-  }
-
-  #cont-empresas img {
-    padding: 20px 40px;
-    width: 100px;
+  #form-content {
+    width: 600px;
   }
 }
 
@@ -609,7 +644,6 @@ footer i {
   #container-all {
     overflow: hidden;
   }
-  
   #header {
     display: none;
   }
@@ -649,11 +683,9 @@ footer i {
     cursor: pointer;
     transition: all .1s ease-in-out;
   }
-
   #wpp:hover {
     transform: scale(1.3);
   }
-
   #part1 {
     height: 650px;
     background-image: url(assets/images/fundoteste3.jpg);
@@ -743,30 +775,12 @@ footer i {
   #cont-empresas img {
     width: 150px;
   }
-  #form {
-    background-image: url(assets/images/teste1212.jpg);
-  }
-  #form h1 {
-    font-size: 46px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
+
   #form-content {
-    width: 50%;
+    width: 800px;
   }
-  #form-content input {
-    height: 40px;
+  #form-main input, #form-main select, #form-main textarea{
     font-size: 18px;
-  }
-  #form-content select {
-    height: 40px;
-    font-size: 18px;
-  }
-  #inpt-msg {
-    font-size: 18px;
-  }
-  #btn-enviarform {
-    font-size: 26px;
   }
   footer {
     display: none;
