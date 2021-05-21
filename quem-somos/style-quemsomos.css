@@ -1,0 +1,590 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+body a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+:root {
+ --black : #342E37;
+ --white : #FAFFFD;
+ --blue : #3C91E6;
+ --green : #9FD356;
+ --orange : #FA824C;
+ --black-full : #000;
+ --white-full : #fff;
+ --font1 : "PT Sans Caption";
+ --font2 : "Roboto Mono";
+ --font3 : "Montserrat";
+}
+
+ /* -- HEADER --  */
+
+#header {
+  background-color: var(--black);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index:3;
+}
+
+#headerWeb {
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px;
+}
+
+#left-nav {
+  background-color: var(--orange);
+  text-align: center;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#openclosenav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+
+#navmenu {
+  background-color: var(--black);
+  filter: opacity(0.98);
+  color: var(--white);
+  height: 90vh;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 24px;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.navbarsep {
+  margin: 0 auto;
+  width: 80%;
+  height: 1px;
+  background-color: var(--white);
+}
+
+#navmenu nav {
+  width: 100%;
+}
+
+#navmenu a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font1);
+  padding: 10px;
+}
+
+#navmenu a:hover {
+  background-color: var(--black-full);
+  text-decoration: underline;
+}
+
+#navicon {
+  color: white;
+  font-size: 24px;
+}
+
+#logoheader {
+  width: 50px;
+}
+
+#wpp {
+  color: var(--green);
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+ /* -- MAIN --  */
+#main {
+  width: 100%;
+  height: 100%;
+}
+#part1 {
+  margin-top: 30px;
+  height: 600px;
+  width: 100%;
+  background-image: url(../assets/images/quem-somos/fundo1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#part1-container {
+  height: 100%;
+  width: 100%;
+}
+#block-logo {
+  margin: 100px auto 0px auto;
+  width: 280px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mxlogo {
+  width: 140px;
+}
+#banner-container {
+  margin-top: 80px;
+  width: 100%;
+  height: 140px;
+  background-image: url(../assets/images/quem-somos/image\ 15.jpg);
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#txt-quemsomos {
+  font-family: var(--font1);
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+ /* -- PART2 --  */
+
+#part2 {
+  display: inline-block;
+  background-image: url(../assets/images/quem-somos/fundo-part2.jpg);
+}
+
+#part2-container {
+  width: 100%;
+  height: 100%;
+}
+
+.h1banner {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.txt-h1{
+  font-family: var(--font1);
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--white); 
+}
+
+#part2-txt {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#part2-txt p {
+  font-family: var(--font1);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--black);
+}
+#icon-p2 {
+  width: 100%;
+  text-align: center;
+}
+#icon-hand {
+  width: 200px;
+  display: inline-block;
+  margin-bottom: 100px;
+  border: 6px dashed var(--green);
+  border-radius: 150px;
+}
+ /* -- PART2 --  */
+
+ #part3 {
+  background-image: url(../assets/images/quem-somos/image\ 16.jpg);
+  background-size: cover;
+  height: 100%;
+  display: block;
+}
+
+#part3-container {
+  width: 100%;
+  height: 100%;
+}
+
+#boxes-p3{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.box-p3 {
+  margin: 100px auto;
+  width: 80%;
+  background-color: var(--green);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.txt-blockp3 {
+  text-align: center;
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: regular;
+  color: var(--white);
+}
+
+ /* -- PART 4 --  */
+
+#part4 {
+  height: 100%;
+  width: 100%;
+}
+
+#part4-container {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.p4-box {
+  background-color: #DEDEDE;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.photo-p4-boxes {
+  margin-top: 20px;
+  width: 190px;
+  height: 190px;
+  border: 7px solid var(--black);
+  border-radius: 100px;
+}
+
+.title-p4-boxes {
+  font-family: var(--font1);
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.name-p4-boxes {
+  font-family: var(--font3);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.line-boxp4 {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 200px;
+  background-color: var(--black);
+  margin: 20px auto;
+}
+
+.redes-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+ /* -- PART 5 --  */
+
+#part5 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/images/quem-somos/image\ 17.jpg);
+  background-size: cover;
+}
+
+#part5-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#box-p5 {
+  margin: 60px auto;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.txt-p5 {
+  color: var(--white);
+  font-family: var(--font3);
+  text-align: center;
+  margin: 20px 0;
+  width: 85%;
+  font-size: 22px;
+}
+
+.line-boxp5 {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  background-color: var(--white);
+}
+
+.icon-p5 {
+  width: 50px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+ /* -- FOOTER --  */
+
+footer {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font1);
+  font-weight: 300;
+  padding: 20px;
+}
+
+#footer-title {
+  font-size: 22px;
+}
+
+footer i {
+  font-size: 36px;
+  padding: 18px;
+}
+
+#footer-contato {
+  font-size: 14px;
+}
+
+#footer2 {
+  display: none;
+}
+#btn-enviarform {
+  margin-bottom: 30px;
+}
+@media (max-width: 320px) {
+  footer i {
+    padding: 10px;
+  }
+}
+ /* -- WEB --  */
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 70px;
+  }
+  #box-p5 {
+    width: 85%;
+  }
+  .line-boxp5 {
+    width: 100px;
+  }
+  .icon-p5 {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #container-all {
+    overflow: hidden;
+  }
+  #header {
+    display: none;
+  }
+  #headerWeb {
+    background-color: var(--black);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index:3;
+  }
+  .linkmenu {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font1);
+    font-size: 20px;
+    padding: 15px 15px;
+    transition: all .1s ease-in-out;
+  }
+  .linkmenu:hover {
+    background-color: var(--orange);
+  }
+  #logo {
+    margin-left: 40px;
+  }
+  #left-nav {
+    width: 120px;
+  }
+  #navicon{
+    font-size: 36px;
+  }
+  #wpp {
+    font-size: 36px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+  }
+  #wpp:hover {
+    transform: scale(1.3);
+  }
+  #part1 {
+    height: 780px;
+  }
+  #banner-container{
+    margin-top: 120px;
+    height: 140px;
+    background-size: cover;
+  }
+  #mxlogo {
+    width: 180px;
+  }
+  #txt-quemsomos {
+    font-size: 56px;
+  }
+  #block-logo {
+    margin-top: 100px;
+    width: 480px;
+    height: 320px;
+  }
+  .h1banner {
+    height: 100px;
+  }
+  .h1banner p {
+    font-size: 48px;
+  }
+  #part2 {
+    height: 700px;
+  }
+  #part2-txt {
+    width: 60%;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+  }
+  #part2-txt p {
+    font-size: 28px;
+  }
+  .box-p3 {
+    width: 60%;
+    margin: 120px auto;
+  }
+  .txt-blockp3 {
+    font-size: 24px;
+  }
+  .p4-box {
+    width: 50%;
+    margin-top: 100px;
+  }
+  #flexbox-p4 {
+    display: flex;
+    align-items: center;
+  }
+  .left-side-boxp4 {
+    margin: 10px 30px 30px 0px;
+  }
+  .right-side-boxp4 {
+    margin: 0px 0px 0px 30px;
+  }
+  .photo-p4-boxes {
+    width: 200px;
+    height: 200px;
+  }
+  .title-p4-boxes {
+    font-size: 36px;
+  }
+  .name-p4-boxes {
+    font-size: 26px;
+  }
+  .line-boxp4 {
+    width: 260px;
+  }
+  .redes-icon img{
+    width: 50px;
+  }
+  #box-p5 {
+    margin: 100px auto;
+    width: 60%;
+    height: 600px;
+  }
+  .line-boxp5 {
+    width: 180px;
+  }
+  .txt-p5 {
+    width: 60%;
+    padding: 0px 140px;
+    font-size: 26px;
+  }
+  footer {
+    display: none;
+  }
+  #footer2 {
+    display: block;
+  }
+  #footer-title2 {
+    font-size: 28px;
+  }
+  #footer-contato2 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  #footer-icons2 {
+    margin-bottom: -20px;
+  }
+}
